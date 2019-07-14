@@ -142,11 +142,15 @@ input[type="radio"].visually-hidden {
 }
 
 .site-navigation a:active {
-    color: seagreen;
+    color: #2e8b57;
 }
 
 .site-navigation a:active::before {
     content: none;
+}
+
+.site-navigation-current.site-navigation-current a {
+    color: #2e8b57;
 }
 
 .slider {
@@ -227,7 +231,7 @@ input[type="radio"].visually-hidden {
 
 .slider-control .button-right:active,
 .slider-control .button-left:active {
-    background-color: seagreen;
+    background-color: #2e8b57;
 }
 
 .slider-indicator {
@@ -450,7 +454,7 @@ input[type="radio"].visually-hidden {
 .button:active {
     background-color: seagreen;
 }
-}
+
 
 .main-footer {
     background-color: #ffffff;
@@ -497,6 +501,7 @@ input[type="radio"].visually-hidden {
     height: 20px;
     background-image: url('../img/sosial.png');
     background-repeat: no-repeat;
+    opacity: 0.5;
 }
 
 .social-list .fb {
@@ -521,10 +526,9 @@ input[type="radio"].visually-hidden {
 
 .social-list a:hover,
 .social-list a:focus {
-    box-sizing: border-box;
-    border-bottom: 2px solid #000000;
+    opacity: 1;
 }
 
 .social-list a:active {
-    border-bottom: 2px solid seagreen;
+    background-image: url('../img/sosial-active.png');
 }
