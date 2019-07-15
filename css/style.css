@@ -49,7 +49,7 @@ input[type="radio"].visually-hidden {
 .container {
     width: 1140px;
     margin: 0 auto;
-    padding: 0 0;
+    padding: 0 230px;
 }
 
 .main-navigation {
@@ -286,8 +286,6 @@ input[type="radio"].visually-hidden {
 }
 
 .slider-item {
-    margin: 0;
-    padding: 0;
     display: none;
     width: 1600px;
     margin: 0 auto;
@@ -456,10 +454,354 @@ input[type="radio"].visually-hidden {
 }
 
 
+/* about */
+.banner {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 70px;
+    width: 1600px;
+    min-height: 350px;
+
+    background-color: #f0f0f2;
+    background-image: url("../img/base.jpg");
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+}
+
+.top-shadow {
+    box-shadow: inset 0px 6px 3px -5px #c8c8c8;
+}
+
+.banner-text h1 {
+    position: absolute;
+    top: 115px;
+    left: 230px;
+    display: block;
+    width: 590px;
+    padding: 10px 0;
+    margin: 0;
+    font-size: 48px;
+    font-weight: 400;
+    color: #ffffff;
+    background-color: #000000;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.banner-text p {
+    position: absolute;
+    top: 190px;
+    left: 230px;
+    display: block;
+    width: 590px;
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #000000;
+    background-color: transparent;
+    text-transform: uppercase;
+}
+
+.information {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1140px;
+}
+
+.about-column {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 1140px;
+    padding-bottom: 26px;
+    margin-bottom: 67px;
+}
+
+.about-column-left {
+    width: 531px;
+}
+
+.about-column-right {
+    width: 558px;
+}
+
+.story,
+.skills {
+    display: block;
+    width: 558px;
+}
+
+.story {
+    margin-bottom: 15px;
+}
+
+.story h1,
+.skills h1 {
+    margin: 0;
+    margin-bottom: 30px;
+    padding: 0;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400px;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.story p {
+    margin: 0;
+    margin-bottom: 30px;
+    padding: 0;
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 400px;
+    color: #777777;
+}
+
+.skills ul {
+    display: block;
+    width: 558px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.skills-scale-item {
+    margin-bottom: 20px;
+}
+
+.skills-scale-item h2 {
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #2f302f;
+    margin-bottom: 15px;
+}
+
+.scale {
+    position: relative;
+    display: block;
+    width: 558px;
+    height: 10px;
+    background-color: #ebebeb;
+}
+
+.bar {
+    display: block;
+    height: 2px;
+    position: absolute;
+    top: 4px;
+    left: 3px;
+    background-color: #a1a1a1;
+}
+
+.photoshop-scale .bar {
+    width: 490px;
+}
+
+.branding-scale .bar {
+    width: 520px;
+}
+
+.photography-scale .bar {
+    width: 276px;
+}
+
+.web-design-scale .bar {
+    width: 450px;
+}
+
+.photoshop-scale,
+.branding-scale,
+.photography-scale,
+.web-design-scale {
+    position: relative;
+}
+
+.toggle {
+    position: absolute;
+    top: -1px;
+
+    width: 4px;
+    height: 4px;
+    padding: 0;
+
+    border: 4px solid #000000;
+    border-radius: 50%;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+.photoshop-scale .toggle {
+    left: 484px;
+}
+
+.branding-scale .toggle {
+    left: 514px;
+}
+
+.photography-scale .toggle {
+    left: 270px;
+}
+
+.web-design-scale .toggle {
+    left: 444px;
+}
+
+.scale-value-container {
+    position: absolute;
+    display: block;
+    width: 40px;
+    top: -39px;
+}
+
+.photoshop-scale .scale-value-container {
+    left: 490px;
+}
+
+.branding-scale .scale-value-container {
+    left: 520px;
+}
+
+.photography-scale .scale-value-container {
+    left: 276px;
+}
+
+.web-design-scale .scale-value-container {
+    left: 450px;
+}
+
+.scale-value {
+    display: block;
+    width: 40px;
+    padding: 0 0;
+    margin: 0;
+    background-color: #041608;
+
+    position: relative;
+
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.scale-value::after {
+    content: "";
+    position: absolute;
+    bottom: -7px;
+    left: 0;
+    border: 3.5px solid transparent;
+    border-left: 3.5px solid #041608;
+    border-top: 3.5px solid #041608;
+}
+
+.team {
+    display: block;
+    width: 1140px;
+}
+
+.team h2 {
+    width: 360px;
+    padding: 0;
+    margin: 0 auto;
+    margin-bottom: 35px;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.team p {
+    width: 615px;
+    padding: 0;
+    margin: 0 auto;
+    margin-bottom: 65px;
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 400;
+    color: #777777;
+    text-align: center;
+}
+
+.team-members-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 1140px;
+    padding: 0;
+    margin: 0 auto;
+    margin-bottom: 75px;
+    list-style: none;
+
+}
+
+.team-member {
+    display: inline-block;
+    width: 358px;
+    background-color: #ffffff;
+}
+
+.team-member img {
+    margin-bottom: 35px;
+}
+
+.team-member:hover {
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.6);
+}
+
+.team-member .name {
+    margin: 0;
+    margin-bottom: 5px;
+    padding: 0;
+    padding-left: 35px;
+    display: block;
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #152618;
+}
+
+.team-member p {
+    width: 358px;
+    margin: 0;
+    padding: 0;
+    padding-left: 35px;
+    padding-right: 40px;
+    padding-bottom: 27px;
+    display: block;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #9c9c9c;
+    box-sizing: border-box;
+    text-align: start;
+}
+
+.team-member .specialization {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 18px;
+    padding-bottom: 0;
+}
+
+
+
+/* footer */
 .main-footer {
+    width: 1600px;
+    margin: 0 auto;
     background-color: #ffffff;
     padding-top: 64px;
     padding-bottom: 95px;
+
 }
 
 .footer-logo {
