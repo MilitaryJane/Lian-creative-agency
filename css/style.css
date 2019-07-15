@@ -795,8 +795,52 @@ input[type="radio"].visually-hidden {
 /* portfolio item */
 
 .portfolio-banner {
-    margin-bottom: 0;
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    width: 1600px;
+    min-height: 350px;
+
+    background-color: #e2e2e2;
+    background-image: url("../img/banner-port.jpg");
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
 }
+
+.portfolio-navigation {
+    width: 1140px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    line-height: 24px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.portfolio-navigation-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 328px;
+    display: flex;
+}
+
+.portfolio-navigation a {
+    position: relative;
+    display: block;
+    color: #071f08;
+    box-sizing: border-box;
+    width: 164px;
+    padding: 22px 0;
+    border-left: 1px solid #e2e2e2;
+    border-right: 1px solid #e2e2e2;
+    text-align: center;
+}
+
+.portfolio-navigation-previous {
+    border-right: none;
+}
+
 
 
 
